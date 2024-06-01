@@ -1,0 +1,3138 @@
+/*---------------------Fonts-----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---------------------Fonts-----------------*/
+
+/*---------------------Roots-----------------*/
+
+:root {
+    ---blue: #255ae4;
+    ---white: #ffffff;
+    ---grey: #4a4a4a;
+    ---black: #222222;
+    ---lightblue: #e9f0ff;
+    --gradient: linear-gradient(90deg, #3f80e4, #1b53e4);
+    --lightgrey: #858585;
+    ---border:#eeeeee;
+}
+
+/*---------------------Roots-----------------*/
+
+/*---------------------Bodys----------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+    background-image: url(img/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    padding: 30px 130px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(---lightblue);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(---grey);
+    height: 200px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient);
+    border-radius: 100px;
+}
+
+/*---------------------Body----------------*/
+#upper{
+    font-size: 20px;
+    color: var(---black);
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background-color: var(---white);
+    box-shadow: 0px 0px 10px #2222221a;
+    cursor: pointer;
+    z-index: 7;
+}
+#upper:hover{
+    color: var(---white);
+    background: var(--gradient);
+}
+/*Arrow*/
+
+/*Animation*/
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(---white);
+    z-index: 1000;
+}
+.loading img{
+    width: 25%;
+}
+.dispper{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/*Animation*/
+
+
+/*Top Heading*/
+.top-header {
+    background: var(--gradient);
+}
+
+.top-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header .container .top-header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-header .container .top-header-left .top-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-header .container .top-header-left .top-header-box i {
+    font-size: 20px;
+    color: var(---white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-header .container .top-header-left .top-header-box p {
+    font-size: 15px;
+    color: var(---white);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.top-header .container .top-header-left .top-header-box {
+    margin-right: 30px;
+}
+
+.top-header .container .right-top-header {
+    display: flex;
+    align-items: center;
+}
+
+.top-header .container .right-top-header i {
+    width: 33px;
+    height: 33px;
+    border-radius: 100px;
+    background-color: var(---white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-left: 10px;
+    color: var(---black);
+}
+
+.top-header .container .right-top-header i:hover {
+    color: var(---blue);
+}
+
+/*Top Heading*/
+
+/*Header*/
+.header {
+    background-color: transparent;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .navbar .data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+}
+
+.header .container .navbar .data a {
+    margin: 0px 5px;
+    padding: 20px 20px;
+    color: var(---black);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.header .container .navbar .data .activelink,
+.btna:hover {
+    background: var(--gradient);
+    color: var(---white);
+}
+
+.header .container button {
+    width: 200px;
+    height: 70px;
+    background: var(--gradient);
+    color: var(---white);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid var(---white);
+    box-shadow: 0px 10px 25px #1b54e459;
+}
+
+.header .container button:hover {
+    border-radius: 10px 24px 15px 15px;
+    transition: 0.1s all linear;
+}
+
+.header .container #menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    border: 2px solid var(---lightblue);
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 7;
+}
+
+.header .container #menu:hover {
+    background: var(--gradient);
+    color: var(---white);
+}
+
+.header .container .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header .container .navbar.active {
+    left: -10px;
+    transition: 0.2s all linear;
+}
+
+.header .container .navbar .data #close {
+    display: none;
+}
+
+.header .container .navbar.closemenu {
+    left: -100%;
+}
+
+/*Header*/
+
+/*Hero*/
+.hero {
+    background-color: transparent;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .container h4 {
+    width: 250px;
+    height: 60px;
+    background-color: var(---lightblue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(---blue);
+    font-weight: 600;
+}
+
+.hero .container .hero-text h1 {
+    font-size: 70px;
+    font-weight: 400;
+    color: var(---black);
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.178);
+    line-height: 100px;
+    margin-top: 40px;
+}
+
+.hero .container .hero-text b {
+    color: var(---blue);
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.hero .container .hero-text p {
+    font-size: 20px;
+    color: var(---grey);
+    font-weight: 500;
+    line-height: 50px;
+    margin: 40px 0px;
+}
+
+.hero .container .hero-text span {
+    color: var(---blue);
+    font-weight: 700;
+}
+
+.hero .container .hero-text button {
+    width: 200px;
+    height: 70px;
+    background: var(--gradient);
+    color: var(---white);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid var(---white);
+    box-shadow: 0px 10px 25px #1b54e459;
+}
+
+.hero .container .hero-text button:hover {
+    border-radius: 10px 24px 15px 15px;
+    transition: 0.1s all linear;
+}
+
+.hero .container .hero-text .button-hero #bt {
+    color: var(---black);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.hero .container .hero-text .button-hero #bt:hover {
+    color: var(---blue);
+}
+
+.hero .container .hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .container .hero-image #hero1 {
+    position: absolute;
+    bottom: 120px;
+    left: -55px;
+}
+
+.hero .container .hero-image #heroicon {
+    position: absolute;
+    top: 18%;
+    left: -50px;
+    animation: hithere 2s ease infinite;
+}
+
+@keyframes hithere {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero .container .hero-image #hero2 {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/*Hero*/
+
+/*Logoslider*/
+.logo-slider {
+    margin-top: 100px;
+}
+
+.logo-slider .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-slider .container #image-logo {
+    width: 300px;
+}
+
+/*Logoslider*/
+
+/*Heading*/
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    color: var(---black);
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.heading h1 b {
+    color: var(---blue);
+}
+
+/*Heading*/
+
+/*Service*/
+.service {
+    margin-top: 150px;
+}
+
+.service .container {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service .container .service-box {
+    width: 520px;
+    height: 520px;
+    position: relative;
+}
+
+.service .container .service-box .serviceimage {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.service .container .service-box .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(---white);
+    width: 0px;
+    height: 250px;
+    transition: .2s ease;
+    overflow: hidden;
+    border-radius: 0px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px -20px 25px rgba(0, 0, 0, 0.171);
+}
+
+.service .container .service-box .service-icon {
+    display: flex;
+    align-items: center;
+}
+
+.service .container .service-box .service-icon h2 {
+    font-size: 22px;
+    color: var(---black);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.service .container .service-box p {
+    font-size: 13px;
+    color: var(---grey);
+    font-weight: 500;
+    line-height: 30px;
+    margin: 15px 0px;
+}
+
+.service .container .service-box button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(---black);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.service .container .service-box button:hover {
+    color: var(---blue);
+}
+
+.service .container .service-box button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.service .container .service-box:hover .overlay {
+    width: 350px;
+}
+
+/*Service*/
+
+/*About Us*/
+.about {
+    margin-top: 150px;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .container .about-text h1 {
+    font-size: 70px;
+    font-weight: 400;
+    color: var(---black);
+}
+
+.about .container .about-text p {
+    color: var(---grey);
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.about .container .about-text #para2 {
+    margin-top: 10px;
+}
+
+.about .container .about-text p b {
+    color: var(---blue);
+}
+
+.about .container .about-text button {
+    width: 200px;
+    height: 70px;
+    background: var(--gradient);
+    color: var(---white);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid var(---white);
+    box-shadow: 0px 10px 25px #1b54e459;
+    margin-top: 20px;
+}
+
+.about .container .about-text button:hover {
+    border-radius: 10px 24px 15px 15px;
+    transition: 0.1s all linear;
+}
+
+/*About Us*/
+
+/*Advantage*/
+.advantages {
+    margin-top: 150px;
+}
+
+.advantages .container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.advantages .container .counter-box {
+    text-align: center;
+}
+
+.advantages .container .counter-box h5 {
+    font-size: 30px;
+    color: var(--lightgrey);
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.advantages .container .counter-box .counter {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(---black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Advantage*/
+
+/*Team*/
+.team {
+    margin-top: 150px;
+}
+
+.team .team-slider {
+    padding: 20px 20px;
+    margin-top: 100px;
+}
+
+.team .team-slider .slider-box .slide img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+.team .team-slider .slider-box {
+    border-radius: 20px;
+    width: 450px;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.123);
+    cursor: grab;
+}
+
+.team .team-slider .slider-box .slide h3 {
+    color: var(---black);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.team .team-slider .slider-box .slide p {
+    font-size: 20px;
+    color: var(---grey);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.team .team-slider .slider-box .slide button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--gradient);
+    color: var(---white);
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.team .team-slider .slider-box .slide .data {
+    margin-top: 15px;
+}
+
+.team .team-slider .slider-box .slide button:hover {
+    border-radius: 10px 20px 15px 15px;
+    transition: 0.1s all linear;
+}
+
+/*Team*/
+
+/*Contact Us*/
+.con{
+    margin-top: 150px;
+}
+.con .container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.con .container .info {
+    display: block;
+}
+.con .container .info .info-box{
+    background-color: var(---white);
+    border: 1px solid var(---border);
+    border-radius: 20px;
+    width: 640px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.con .container .info .info-box .data {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.con .container .info .info-box .data .info-image{
+    background: var(--gradient);
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con .container .info .info-box .data .text {
+    display: block;
+    margin-left: 10px;
+}
+.con .container .info .info-box .data .text h5{
+    font-size: 20px;
+    color: var(---black);
+    font-weight: 600;
+}
+.con .container .info .info-box .data .text p{
+    font-size: 16px;
+    color: var(---grey);
+    font-weight: 500;
+}
+.con .container .form-box{
+    background-color: var(---white);
+    width: 930px;
+    height: 830px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.con .container .form-box .data input{
+    display: block;
+    width: 814px;
+    height: 116px;
+    border: 2px solid var(---border);
+    border-radius: 10px;
+    margin: 35px 0px;
+    font-size: 23px;
+    color: var(---black);
+    font-weight: 500;
+    padding-left: 20px;
+}
+.con .container .form-box .data input::placeholder{
+    color: var(---black);
+}
+.con .container .form-box .data textarea{
+    display: block;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    border: 2px solid var(---border);
+    font-size: 20px;
+    color: var(---black);
+    font-weight: 500;
+    padding: 20px 0px;
+    padding-left: 20px;
+    resize: vertical;
+}
+.con .container .form-box .data textarea::placeholder{
+    color: var(---black);
+}
+.con .container .form-box .data{
+    margin-bottom: 20px;
+}
+.con .container .form-box .data button{
+    width: 290px;
+    height: 93px;
+    background: var(--gradient);
+    font-size: 22px;
+    color: var(---white);
+    font-weight: 500;
+    margin-top: 30px; 
+    cursor: pointer;   
+    border: 2px solid var(---white);
+    box-shadow: 0px 10px 20px #1b54e427;
+}
+.con .container .form-box .data button:hover{
+    border-radius: 10px 20px 15px 15px;
+    transition: 0.1s all linear;
+}
+/*Contact Us*/
+
+/*Footer*/
+.footer{
+    background: var(--gradient);
+    margin-top: 150px;
+}
+.footer .container{
+    text-align: center;
+}
+.footer .container .right-top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .container .right-top-header i {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid var(---white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0px 10px;
+    color: var(---white);
+}
+.footer .container .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .container .link a {
+    margin: 0px 5px;
+    padding: 20px 20px;
+    color: var(---white);
+    font-weight: 500;
+    border-radius: 5px;
+}
+.footer .last{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid #7d9def;
+}
+.footer .last p{
+    color: var(---white);
+    margin-top: 20px;
+}
+/*Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quries */
+@media (max-width:1835px) {
+    .hero .container .hero-image {
+        width: 700px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        position: absolute;
+        bottom: 120px;
+        left: -110px;
+    }
+
+    .service .container .service-box {
+        width: 450px;
+        height: 450px;
+    }
+
+    .about .container .about-image {
+        width: 800px;
+    }
+
+    .about .container .about-image img {
+        width: 100%;
+    }
+    .con .container .info .info-box{
+        background-color: var(---white);
+        border: 1px solid var(---border);
+        border-radius: 20px;
+        width: 550px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:1772px) {
+    section {
+        padding: 30px 100px;
+    }
+}
+
+@media (max-width:1680px) {
+    section {
+        padding: 30px 80px;
+    }
+
+    .about .container .about-image {
+        width: 720px;
+    }
+    .con .container .info .info-box{
+        background-color: var(---white);
+        border: 1px solid var(---border);
+        border-radius: 20px;
+        width: 520px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 880px;
+        height: 830px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+}
+
+@media (max-width:1590px) {
+    section {
+        padding: 30px 60px;
+    }
+
+    .hero .container .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 75px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 18px;
+    }
+
+    .about .container .about-image {
+        width: 680px;
+    }
+
+    .about .container .about-text h1 {
+        font-size: 60px;
+        font-weight: 400;
+        color: var(---black);
+    }
+
+    .about .container .about-text p {
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 850px;
+        height: 830px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 780px;
+        height: 116px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 35px 0px;
+        font-size: 23px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:1486px) {
+    .header .container .navbar .data a {
+        margin: 0px 0px;
+        padding: 20px 20px;
+        color: var(---black);
+        font-weight: 500;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .header .container button {
+        width: 160px;
+        height: 70px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-image {
+        width: 650px;
+    }
+
+    .hero .container .hero-image #big-hero {
+        width: 100%;
+    }
+
+    .hero .container .hero-image #heroicon {
+        top: 18%;
+        left: -10px;
+        width: 12%;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 120px;
+        left: -40px;
+        width: 50%;
+    }
+
+    .hero .container .hero-image #hero2 {
+        bottom: 0px;
+        right: 30px;
+        width: 35%;
+    }
+
+    .hero .container .hero-text h1 {
+        font-size: 50px;
+        line-height: 80px;
+        margin-top: 20px;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 65px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 16px;
+        margin: 20px 0px;
+    }
+
+    .hero .container h4 {
+        width: 200px;
+        height: 50px;
+        background-color: var(---lightblue);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(---blue);
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .service .container .service-box {
+        width: 400px;
+        height: 400px;
+    }
+
+    .about .container .about-text p {
+        font-size: 14px;
+    }
+
+    /*Section Spacing*/
+    .service {
+        margin-top: 130px;
+    }
+
+    .about {
+        margin-top: 130px;
+    }
+
+    .advantages {
+        margin-top: 130px;
+    }
+
+    .team {
+        margin-top: 130px;
+    }
+    .con{
+        margin-top: 130px;
+    }
+    .footer{
+        margin-top: 130px;
+    }
+    /*Section Spacing*/
+    .con .container .info .info-box .data {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+    .con .container .info .info-box{
+        background-color: var(---white);
+        border: 1px solid var(---border);
+        border-radius: 20px;
+        width: 450px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 780px;
+        height: 830px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 700px;
+        height: 116px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 35px 0px;
+        font-size: 23px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:1390px) {
+    section {
+        padding: 30px 40px;
+    }
+
+    .hero .container .hero-image {
+        width: 600px;
+    }
+
+    .about .container .about-text p {
+        font-size: 13px;
+        line-height: 40px;
+    }
+
+    .about .container .about-image {
+        width: 650px;
+    }
+
+    .about .container .about-text p {
+        font-size: 14px;
+        line-height: 35px;
+        margin: 0px 0px;
+    }
+
+    .about .container .about-text button {
+        width: 150px;
+        height: 60px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(---white);
+        box-shadow: 0px 10px 25px #1b54e459;
+        margin-top: 15px;
+    }
+
+    .advantages .container .counter-box h5 {
+        font-size: 25px;
+        color: var(--lightgrey);
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .advantages .container .counter-box .counter {
+        font-size: 60px;
+        font-weight: 600;
+        color: var(---black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .con .container .info .info-box{
+        background-color: var(---white);
+        border: 1px solid var(---border);
+        border-radius: 20px;
+        width: 450px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 700px;
+        height: 790px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 650px;
+        height: 116px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 30px 0px;
+        font-size: 23px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+    .con .container .info .info-box{
+        background-color: var(---white);
+        border: 1px solid var(---border);
+        border-radius: 20px;
+        width: 400px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .con .container .form-box .data button{
+        width: 240px;
+        height: 80px;
+        background: var(--gradient);
+        font-size: 22px;
+        color: var(---white);
+        font-weight: 600;
+        margin-top: 30px; 
+        cursor: pointer;   
+        border: 2px solid var(---white);
+        box-shadow: 0px 10px 20px #1b54e427;
+    }
+}
+
+@media (max-width:1280px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .top-header .container .top-header-left .top-header-box p {
+        font-size: 12px;
+    }
+
+    .top-header .container .top-header-left .top-header-box {
+        margin-right: 15px;
+    }
+
+    .top-header .container .top-header-left .top-header-box i {
+        font-size: 18px;
+    }
+
+    .hero .container .hero-image {
+        width: 550px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 100px;
+        left: -30px;
+    }
+
+    .logo-slider .container #image-logo {
+        width: 250px;
+    }
+
+    .service .container .service-box {
+        width: 380px;
+        height: 380px;
+    }
+
+    .heading h1 {
+        font-size: 60px;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 100px;
+    }
+
+    .service .container {
+        margin-top: 90px;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .advantages {
+        margin-top: 100px;
+    }
+
+    .advantages .container {
+        margin-top: 90px;
+    }
+
+    .team {
+        margin-top: 100px;
+    }
+
+    .team .team-slider {
+        margin-top: 90px;
+    }
+    .con{
+        margin-top: 100px;
+    }
+    .con .container{
+        margin-top: 90px;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+
+    /*Section and Container Spacing*/
+    .about .container .about-text p {
+        font-size: 12px;
+        line-height: 35px;
+        margin: 0px 0px;
+    }
+
+    .about .container .about-image {
+        width: 650px;
+    }
+
+    .team .team-slider .slider-box .slide h3 {
+        color: var(---black);
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .team .team-slider .slider-box .slide p {
+        font-size: 16px;
+        color: var(---grey);
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .team .team-slider .slider-box .slide button {
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        background: var(--gradient);
+        color: var(---white);
+        cursor: pointer;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width:1200px) {
+    .header .container .navbar .data a {
+        padding: 16px 16px;
+        color: var(---black);
+        font-weight: 500;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .header .container img {
+        width: 200px;
+    }
+
+    .hero .container .hero-text h1 {
+        font-size: 40px;
+        line-height: 70px;
+        margin-top: 10px;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 55px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 14px;
+        line-height: 40px;
+        margin: 10px 0px;
+    }
+
+    .hero .container .hero-text button {
+        width: 160px;
+        height: 70px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-text .button-hero #bt {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .hero .container h4 {
+        width: 160px;
+        height: 50px;
+        background-color: var(---lightblue);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(---blue);
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    .service .container .service-box {
+        width: 340px;
+        height: 340px;
+    }
+
+    .service .container .service-box:hover .overlay {
+        width: 300px;
+    }
+
+    .service .container .service-box .overlay {
+        height: 200px;
+    }
+
+    .service .container .service-box p {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 10px 0px;
+    }
+
+    .service .container .service-box .service-icon h2 {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .about .container .about-image {
+        width: 580px;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 650px;
+        height: 790px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 600px;
+        height: 116px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 30px 0px;
+        font-size: 23px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+    .con .container .info .info-box{
+        background-color: var(---white);
+        border: 1px solid var(---border);
+        border-radius: 20px;
+        width: 370px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .con .container .info .info-box .data .text p{
+        font-size: 14px;
+        color: var(---grey);
+        font-weight: 500;
+    }
+    .con .container .info .info-box .data .info-image{
+        background: var(--gradient);
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width:1080px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .header .container #menu {
+        display: inherit;
+    }
+
+    .header .container .navbar {
+        position: absolute;
+        width: 97.5%;
+        top: 17%;
+        left: -100%;
+        z-index: 7;
+        transition: 0.2s all linear;
+    }
+
+    .header .container .navbar .data {
+        width: 400px;
+        background-color: var(---white);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.096);
+        border-radius: 0px 10px 10px 0px;
+        padding: 10px 10px;
+        display: block;
+        position: relative;
+    }
+
+    .header .container .navbar .data a {
+        display: block;
+        font-size: 18px;
+        margin: 15px 0px;
+        margin-left: 10px;
+    }
+
+    .hero .container .hero-image {
+        width: 500px;
+    }
+
+    .logo-slider .container #image-logo {
+        width: 200px;
+    }
+
+    .logo-slider {
+        margin-top: 100px;
+    }
+
+    .service .container .service-box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .service .container .service-box:hover .overlay {
+        width: 250px;
+    }
+
+    .service .container .service-box button {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: var(---black);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .service .container .service-box .service-icon h2 {
+        font-size: 18px;
+    }
+
+    .service .container .service-box .overlay {
+        height: 150px;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 80px;
+    }
+
+    .service .container {
+        margin-top: 70px;
+    }
+
+    .about {
+        margin-top: 80px;
+    }
+
+    .advantages {
+        margin-top: 80px;
+    }
+
+    .advantages .container {
+        margin-top: 70px;
+    }
+
+    .team {
+        margin-top: 80px;
+    }
+
+    .team .team-slider {
+        margin-top: 70px;
+    }
+    .con{
+        margin-top: 80px;
+    }
+    .con .container{
+        margin-top: 70px;
+    }
+    .footer{
+        margin-top: 80px;
+    }
+
+    /*Section and Container Spacing*/
+
+    .about .container .about-image {
+        width: 530px;
+    }
+
+    .about .container .about-text #para2 {
+        margin-top: 5px;
+    }
+
+    .advantages .container .counter-box h5 {
+        font-size: 20px;
+        color: var(--lightgrey);
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .advantages .container .counter-box .counter {
+        font-size: 50px;
+        font-weight: 600;
+        color: var(---black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 600px;
+        height: 770px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 550px;
+        height: 110px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 30px 0px;
+        font-size: 23px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:1024px) {
+    .header .container .navbar {
+        top: 7%;
+    }
+
+    .hero .container .hero-image {
+        width: 450px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 80px;
+    }
+
+    .about .container .about-text p {
+        font-size: 11px;
+        line-height: 35px;
+        margin: 0px 0px;
+    }
+
+    .team .team-slider .slider-box .slide h3 {
+        color: var(---black);
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .team .team-slider .slider-box .slide p {
+        font-size: 12px;
+        color: var(---grey);
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .team .team-slider .slider-box .slide button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: 500;
+        background: var(--gradient);
+        color: var(---white);
+        cursor: pointer;
+        margin-top: 14px;
+    }
+
+    .team .team-slider .slider-box {
+        border-radius: 10px;
+    }
+
+    .team .team-slider .slider-box .slide img {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .con .container .info .info-box{
+        background-color: var(---white);
+        border: 1px solid var(---border);
+        border-radius: 10px;
+        width: 320px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .con .container .info .info-box .data .text p{
+        font-size: 12px;
+        color: var(---grey);
+        font-weight: 500;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 550px;
+        height: 100px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 30px 0px;
+        font-size: 20px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:975px) {
+    .hero .container .hero-text h1 {
+        font-size: 35px;
+        line-height: 60px;
+        margin-top: 10px;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 45px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 12px;
+        line-height: 35px;
+        margin: 10px 0px;
+    }
+
+    .hero .container .hero-text button {
+        width: 120px;
+        height: 50px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-text .button-hero #bt {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .hero .container .hero-text .button-hero {
+        margin-top: 20px;
+    }
+
+    .service .container .service-box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about .container .about-image {
+        width: 500px;
+    }
+
+    .about .container .about-text p {
+        font-size: 9px;
+        line-height: 30px;
+    }
+
+    .about .container .about-text button {
+        width: 120px;
+        height: 50px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 550px;
+        height: 720px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 500px;
+        height: 100px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 30px 0px;
+        font-size: 20px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+    .con .container .form-box .data button{
+        width: 200px;
+        height: 70px;
+        background: var(--gradient);
+        font-size: 18px;
+        color: var(---white);
+        font-weight: 500;
+        margin-top: 30px; 
+        cursor: pointer;   
+        border: 2px solid var(---white);
+        box-shadow: 0px 10px 20px #1b54e427;
+    }
+}
+
+@media (max-width:930px) {
+
+    .top-header .container .top-header-left .top-header-box p {
+        font-size: 10px;
+    }
+
+    .top-header .container .top-header-left .top-header-box {
+        margin-right: 15px;
+    }
+
+    .top-header .container .top-header-left .top-header-box i {
+        font-size: 16px;
+    }
+
+    .top-header .container .right-top-header i {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .hero .container .hero-image {
+        width: 400px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 10px;
+        line-height: 30px;
+        margin: 10px 0px;
+    }
+
+    .logo-slider .container #image-logo {
+        width: 20%;
+    }
+
+    .service .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service .container .service-box {
+        margin: 10px 10px;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 70px;
+    }
+
+    .service .container {
+        margin-top: 60px;
+    }
+
+    .about {
+        margin-top: 70px;
+    }
+
+    .advantages {
+        margin-top: 70px;
+    }
+
+    .advantages .container {
+        margin-top: 60px;
+    }
+
+    .team {
+        margin-top: 70px;
+    }
+
+    .team .team-slider {
+        margin-top: 60px;
+    }
+    .con{
+        margin-top: 70px;
+    }
+    .con .container{
+        margin-top: 60px;
+    }
+    .footer{
+        margin-top: 70px;
+    }
+
+    /*Section and Container Spacing*/
+    .about .container .about-image {
+        width: 470px;
+    }
+    .con .container .form-box{
+        background-color: var(---white);
+        width: 500px;
+        height: 620px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .con .container .form-box .data input{
+        display: block;
+        width: 450px;
+        height: 80px;
+        border: 2px solid var(---border);
+        border-radius: 10px;
+        margin: 30px 0px;
+        font-size: 16px;
+        color: var(---black);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+    .con .container .form-box .data textarea{
+        display: block;
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        border: 2px solid var(---border);
+        font-size: 16px;
+        color: var(---black);
+        font-weight: 500;
+        padding: 20px 0px;
+        padding-left: 20px;
+        resize: vertical;
+    }
+    .con .container .info .info-box .data .info-image img{
+        width: 40%;
+    }
+}
+
+@media (max-width:850px) {
+    
+    html {
+        font-size: 60%;
+    }
+    .hero .container {
+        display: block;
+    }
+
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 700px;
+    }
+
+    .hero .container .hero-text {
+        text-align: center;
+    }
+
+    .hero .container .hero-image #heroicon {
+        top: 18%;
+        left: -10px;
+        width: 12%;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 120px;
+        left: -40px;
+        width: 50%;
+    }
+
+    .hero .container .hero-image #hero2 {
+        bottom: 0px;
+        right: 30px;
+        width: 35%;
+    }
+
+    .hero .container .hero-text h1 {
+        font-size: 50px;
+        line-height: 80px;
+        margin-top: 20px;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 65px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 16px;
+        margin: 20px 0px;
+    }
+
+    .hero .container h4 {
+        width: 200px;
+        height: 50px;
+        background-color: var(---lightblue);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(---blue);
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .hero .container .hero-text button {
+        width: 160px;
+        height: 70px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-text .button-hero #bt {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .hero .container h4 {
+        margin: 0px auto;
+    }
+
+    .logo-slider {
+        margin-top: 80px;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 60px;
+    }
+
+    .service .container {
+        margin-top: 50px;
+    }
+
+    .about {
+        margin-top: 60px;
+    }
+
+    .advantages {
+        margin-top: 60px;
+    }
+
+    .advantages .container {
+        margin-top: 50px;
+    }
+
+    .team {
+        margin-top: 60px;
+    }
+
+    .team .team-slider {
+        margin-top: 50px;
+    }
+    .con{
+        margin-top: 60px;
+    }
+    .con .container{
+        margin-top: 50px;
+    }
+    .footer{
+        margin-top: 60px;
+    }
+
+    /*Section and Container Spacing*/
+
+    .about .container {
+        display: block;
+    }
+
+    .about .container .about-image {
+        width: 700px;
+        margin: 0px auto;
+    }
+
+    .about .container .about-text {
+        text-align: center;
+    }
+
+    .about .container .about-text h1 {
+        font-size: 50px;
+        font-weight: 400;
+        color: var(---black);
+    }
+
+    .about .container .about-text p {
+        color: var(---grey);
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+
+    .about .container .about-text button {
+        width: 160px;
+        height: 70px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .advantages .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .advantages .container .counter-box {
+        margin: 20px 20px;
+    }
+
+    .team .team-slider .slider-box .slide h3 {
+        color: var(---black);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .team .team-slider .slider-box .slide p {
+        font-size: 12px;
+        color: var(---grey);
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .team .team-slider .slider-box .slide button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: 500;
+        background: var(--gradient);
+        color: var(---white);
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .team .team-slider .slider-box {
+        padding-bottom: 20px;
+    }
+
+    .team .team-slider .slider-box .slide .data {
+        margin-top: 10px;
+    }
+    .con .container{
+        display: block;
+    }
+    .con .container .form-box{
+        width: 650px;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+    .con .container .form-box .data input{
+        width: 580px;
+    }
+    .con .container .info .info-box{
+        margin: 0px auto;
+        margin-bottom: 20px;
+        width: 650px;
+    }
+}
+
+@media (max-width:780px) {
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .top-header .container .top-header-left {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .top-header .container .top-header-left .top-header-box {
+        margin: 5px 0px;
+    }
+
+    .top-header .container .top-header-left #stop-top-header {
+        margin-left: 5px;
+    }
+
+    .header .container .navbar {
+        top: 7%;
+    }
+
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 600px;
+    }
+
+    .about .container .about-image {
+        width: 85%;
+    }
+
+}
+
+@media (max-width:820px) {
+    .header .container .navbar {
+        top: 8%;
+    }
+}
+
+@media (max-width:690px) {
+    .top-header .container .top-header-left #mail-top-header {
+        margin-left: 5px;
+    }
+
+    .top-header .container .top-header-left #stop-top-header {
+        margin-left: 0px;
+    }
+
+    .header .container .navbar .data {
+        width: 300px;
+    }
+
+    .header .container .navbar {
+        top: 12%;
+    }
+
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 550px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 90px;
+    }
+
+    .logo-slider {
+        margin-top: 60px;
+    }
+
+    .heading h1 {
+        color: var(---black);
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 50px;
+    }
+
+    .service .container {
+        margin-top: 40px;
+    }
+
+    .about {
+        margin-top: 50px;
+    }
+
+    .advantages {
+        margin-top: 50px;
+    }
+
+    .advantages .container {
+        margin-top: 40px;
+    }
+
+    .team {
+        margin-top: 50px;
+    }
+
+    .team .team-slider {
+        margin-top: 40px;
+    }
+    .con{
+        margin-top: 50px;
+    }
+    .con .container{
+        margin-top: 40px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+
+    /*Section and Container Spacing*/
+    .about .container .about-text h1 {
+        font-size: 40px;
+        font-weight: 400;
+        color: var(---black);
+    }
+
+    .about .container .about-text p {
+        color: var(---grey);
+        font-size: 13px;
+        line-height: 50px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+    .con .container .form-box{
+        width: 580px;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+    .con .container .form-box .data input{
+        width: 530px;
+    }
+    .con .container .info .info-box{
+        margin: 0px auto;
+        margin-bottom: 20px;
+        width: 580px;
+    }
+    .footer .container .link {
+        display: block;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer .container .link a{
+        display: block;
+        padding: 0px 0px;
+        font-size: 16px;
+        line-height: 50px;
+
+    }
+}
+
+@media (max-width:625px) {
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 500px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 60px;
+    }
+}
+
+@media (max-width:650px) {
+    .service .container .service-box {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width:600px) {
+    .hero .container .hero-text h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: 20px;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 50px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 14px;
+        margin: 20px 0px;
+        line-height: 40px;
+    }
+
+    .hero .container h4 {
+        width: 150px;
+        height: 50px;
+        background-color: var(---lightblue);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(---blue);
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    .hero .container .hero-text button {
+        width: 160px;
+        height: 70px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-text .button-hero #bt {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 450px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 50px;
+        left: -35px;
+    }
+
+    .heading h1 {
+        color: var(---black);
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 40px;
+    }
+
+    .service .container {
+        margin-top: 30px;
+    }
+
+    .about {
+        margin-top: 40px;
+    }
+
+    .advantages {
+        margin-top: 40px;
+    }
+
+    .advantages .container {
+        margin-top: 30px;
+    }
+
+    .team {
+        margin-top: 40px;
+    }
+
+    .team .team-slider {
+        margin-top: 30px;
+    }
+    .con{
+        margin-top: 40px;
+    }
+    .con .container{
+        margin-top: 30px;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+
+    /*Section and Container Spacing*/
+    .con .container .form-box{
+        width: 500px;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+    .con .container .form-box .data input{
+        width: 450px;
+        border-radius: 5px;
+    }
+    .con .container .info .info-box{
+        margin: 0px auto;
+        margin-bottom: 20px;
+        width: 500px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .header .container .navbar .data {
+        width: 250px;
+    }
+
+    .header .container .navbar .data a {
+        font-size: 16px;
+        margin: 10px 0px;
+        margin-left: 10px;
+    }
+
+    .logo-slider {
+        margin-top: 50px;
+    }
+
+    .about .container .about-text h1 {
+        font-size: 30px;
+        font-weight: 400;
+        color: var(---black);
+    }
+
+    .about .container .about-text p {
+        color: var(---grey);
+        font-size: 11px;
+        line-height: 40px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width:540px) {
+    .header .container .navbar {
+        top: 13%;
+    }
+    .con .container .form-box{
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 20px;
+        height: auto;
+    }
+    .con .container .form-box .data input{
+        width: 380px;
+        border-radius: 5px;
+    }
+    .con .container .info .info-box{
+        margin: 0px auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .header .container button {
+        width: 120px;
+        height: 50px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .header .container button:hover {
+        border-radius: 5px 20px 10px 10px;
+        transition: 0.1s all linear;
+    }
+
+    .hero .container .hero-text h1 {
+        font-size: 30px;
+        line-height: 50px;
+        margin-top: 10px;
+        text-shadow: none;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 40px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 12px;
+        margin: 10px 0px;
+        line-height: 30px;
+    }
+
+    .hero .container h4 {
+        width: 120px;
+        height: 40px;
+        background-color: var(---lightblue);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(---blue);
+        font-weight: 600;
+        font-size: 8px;
+    }
+
+    .hero .container .hero-text button {
+        width: 120px;
+        height: 50px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-text .button-hero #bt {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 380px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 50px;
+        left: -30px;
+    }
+
+    .heading h1 {
+        color: var(---black);
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 30px;
+    }
+
+    .service .container {
+        margin-top: 20px;
+    }
+    .service .container .service-box {
+        width: 350px;
+        height: 350px;
+    }
+
+    .about {
+        margin-top: 30px;
+    }
+
+    .advantages {
+        margin-top: 30px;
+    }
+
+    .advantages .container {
+        margin-top: 20px;
+    }
+
+    .team {
+        margin-top: 30px;
+    }
+
+    .team .team-slider {
+        margin-top: 20px;
+    }
+    .con{
+        margin-top: 20px;
+    }
+    .con .container{
+        margin-top: 20px;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+
+    /*Section and Container Spacing*/
+    .team .team-slider .slider-box .slide h3 {
+        color: var(---black);
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .team .team-slider .slider-box .slide p {
+        font-size: 10px;
+        color: var(---grey);
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .team .team-slider .slider-box .slide button {
+        width: 100px;
+        height: 35px;
+        font-size: 10px;
+        font-weight: 500;
+        background: var(--gradient);
+        color: var(---white);
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:430px) {
+    .header .container .navbar .data {
+        width: 200px;
+    }
+
+    .header .container .navbar .data a {
+        font-size: 14px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .header .container #menu {
+        width: 40px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .header .container .navbar {
+        top: 15%;
+    }
+
+    .hero .container .hero-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 10px;
+        text-shadow: none;
+    }
+
+    .hero .container .hero-text b {
+        font-size: 30px;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 10px;
+        margin: 10px 0px;
+        line-height: 30px;
+    }
+
+    .hero .container h4 {
+        width: 120px;
+        height: 40px;
+        background-color: var(---lightblue);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(---blue);
+        font-weight: 600;
+        font-size: 8px;
+    }
+
+    .hero .container .hero-text button {
+        width: 120px;
+        height: 50px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-text .button-hero {
+        margin-top: 0px;
+    }
+
+    .hero .container .hero-text .button-hero #bt {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 330px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 40px;
+        left: -25px;
+    }
+
+    .hero .container .hero-text {
+        margin-top: -20px;
+    }
+
+    .logo-slider {
+        margin-top: 30px;
+    }
+    .con .heading h1{
+        font-size: 30px;
+    }
+
+    .about .container .about-text h1 {
+        font-size: 30px;
+        font-weight: 400;
+        color: var(---black);
+    }
+
+    .about .container .about-text p {
+        color: var(---grey);
+        font-size: 10px;
+        line-height: 40px;
+        font-weight: 600;
+        margin: 0px 0px;
+    }
+
+    .about .container .about-text button {
+        width: 120px;
+        height: 50px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .advantages .container .counter-box h5 {
+        font-size: 16px;
+        color: var(--lightgrey);
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    .advantages .container .counter-box .counter {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(---black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team .team-slider .slider-box .slide h3 {
+        color: var(---black);
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .con .container .form-box .data input{
+        width: 320px;
+        margin: 20px 0px;
+    }
+    .con .container .form-box .data button{
+        width: 120px;
+        height: 50px;
+        background: var(--gradient);
+        font-size: 12px;
+        color: var(---white);
+        font-weight: 500;
+        margin-top: 20px; 
+        cursor: pointer;   
+        border: 2px solid var(---white);
+        box-shadow: 0px 10px 20px #1b54e427;
+    }
+    .con .heading h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:400px) {
+    #upper{
+        font-size: 18px;
+        color: var(---black);
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 4%;
+        bottom: 1%;
+        background-color: var(---white);
+        box-shadow: 0px 0px 10px #2222221a;
+        cursor: pointer;
+        z-index: 7;
+    }
+    .top-header .container {
+        display: block;
+    }
+
+    .top-header .container .right-top-header i {
+        margin-left: 0px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+
+    .header .container img {
+        width: 80%;
+    }
+    .header .container .navbar .data {
+        width: 168px;
+    }
+
+    .header .container .navbar {
+        top: 15.5%;
+    }
+
+    .hero .container .hero-text button {
+        width: 100px;
+        height: 40px;
+        background: var(--gradient);
+        color: var(---white);
+        font-size: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(---white);
+        box-shadow: 0px 0px 20px #1b54e459;
+    }
+
+    .hero .container .hero-text .button-hero #bt {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .logo-slider {
+        margin-top: 20px;
+    }
+
+    /*Section and Container Spacing*/
+    .service {
+        margin-top: 20px;
+    }
+
+    .service .container {
+        margin-top: 20px;
+    }
+    .service .container .service-box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about {
+        margin-top: 20px;
+    }
+
+    .advantages {
+        margin-top: 20px;
+    }
+
+    .advantages .container {
+        margin-top: 20px;
+    }
+
+    .team {
+        margin-top: 20px;
+    }
+
+    .team .team-slider {
+        margin-top: 20px;
+    }
+    .con{
+        margin-top: 20px;
+    }
+    .con .container{
+        margin-top: 20px;
+    }
+    .footer{
+        margin-top: 20px;
+    }
+
+    /*Section and Container Spacing*/
+    .about .container .about-text p {
+        color: var(---grey);
+        font-size: 8px;
+        line-height: 30px;
+        font-weight: 600;
+        margin: 0px 0px;
+    }
+
+    .team .team-slider .slider-box .slide h3 {
+        color: var(---black);
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .team .team-slider .slider-box .slide p {
+        font-size: 16px;
+        color: var(---grey);
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .team .team-slider .slider-box .slide button {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        background: var(--gradient);
+        color: var(---white);
+        cursor: pointer;
+        margin-top: 14px;
+    }
+    .team .team-slider .slider-box .slide button:hover {
+        border-radius: 5px 15px 10px 10px;
+        transition: 0.1s all linear;
+    }
+    .footer .container .right-top-header i {
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+        background-color: transparent;
+        border: 2px solid var(---white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        margin: 0px 5px;
+        color: var(---white);
+    }
+    .footer .last p{
+        color: var(---white);
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .footer .container img{
+        width: 60%;
+    }
+}
+
+@media (max-width:375px) {
+    .header .container .navbar {
+        top: 19%;
+    }
+
+    .hero .container .hero-text p {
+        font-size: 8px;
+        margin: 10px 0px;
+        line-height: 25px;
+    }
+
+    .hero .container .hero-image {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 280px;
+    }
+
+    .hero .container .hero-image #hero1 {
+        bottom: 40px;
+        left: -20px;
+    }
+
+    .team .team-slider .slider-box .slide h3 {
+        color: var(---black);
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .team .team-slider .slider-box .slide p {
+        font-size: 14px;
+        color: var(---grey);
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .team .team-slider .slider-box .slide button {
+        width: 130px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        background: var(--gradient);
+        color: var(---white);
+        cursor: pointer;
+        margin-top: 14px;
+    }
+    .con .container .form-box .data input{
+        width: 280px;
+    }
+    .con .container .form-box .data textarea{
+        width: 280px;
+    }
+}
+
+@media (max-width:360px) {
+    .top-header .container .top-header-left #mail-top-header {
+        margin-left: 5px;
+    }
+
+    .header .container .navbar {
+        top: 17%;
+    }
+
+    .heading h1 {
+        color: var(---black);
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .footer .last p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:344px) {
+    .header .container .navbar {
+        top: 15%;
+    }
+
+    .service .container .service-box {
+        width: 250px;
+        height: 250px;
+    }
+
+    .service .container .service-box .overlay {
+        height: 150px;
+    }
+
+    .service .container .service-box:hover .overlay {
+        width: 200px;
+    }
+
+    .service .container .service-box p {
+        font-size: 8px;
+    }
+
+    .service .container .service-box .service-icon h2 {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+
+    .service .container .service-box .service-icon img {
+        width: 40px;
+    }
+
+    .service .container .service-box button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .hero .container .hero-image {
+        width: 80%;
+    }
+}
+
+/* media quries */
